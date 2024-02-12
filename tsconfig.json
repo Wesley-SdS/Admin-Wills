@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -7,9 +8,10 @@
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
+
     "jsx": "preserve",
     "incremental": true,
     "plugins": [
@@ -21,6 +23,17 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/api/auth/[...nextauth]/route.js",
+    "src/components/AppContext.js",
+    "src/app/api/register/route.js",
+    "src/libs/mongoConnect.tsx",
+    "src/components/layout/userForm.tsx",
+    "src/app/profile/page.tsx"
+  ],
   "exclude": ["node_modules"]
 }

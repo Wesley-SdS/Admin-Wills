@@ -1,0 +1,13 @@
+{
+  "Criar função exportada por padrão": {
+    "prefix": "cfe",
+    "body": [
+      "export default function ${1:NomeDoComponente}() {",
+      "\treturn (",
+      "\t\t$0",
+      "\t);",
+      "}"
+    ],
+    "description": "Criar uma função exportada por padrão"
+  }
+}
